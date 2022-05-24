@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+<title>barre de recherche</title>
+</head>
+<body>
+<div class="test">
+<h2>tester notre barre de recherche</h2>
+</div>
+
+
+    <input type="search" id="search" placeholder="search"  value="" onchange="ouvrirPage()">
+    <input type="button" id="button" onclick="ouvrirPage()" value="chercher">
+
+    <script>
+        function ouvrirPage() {
+            var a = document.getElementById("search").value;
+
+            if (a === "chat") {
+                window.open("/index.html");
+            }
+
+           
+
+
+        }
+    </script>
+
+
+
+</body>
+</html>
 
